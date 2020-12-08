@@ -1,0 +1,300 @@
+<html>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Material-UI Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#Installation">Installation</a></li>
+        <li>
+          <a class="nav-link" href="#npm">npm</a>
+        </li>
+        <li><a class="nav-link" href="#Roboto_font">Roboto Font</a></li>
+        <li>
+          <a class="nav-link" href="#Font_icons">Font Icons</a>
+        </li>
+        <li><a class="nav-link" href="#SVG_icons">SVG Icons</a></li>
+        <li>
+          <a class="nav-link" href="#Usage">Usage</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Quick_start">Quick start</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Globals">Globals</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Responsive_meta_tag"
+            >Responsive meta tag</a
+          >
+        </li>
+        <li><a class="nav-link" href="#CssBaseline">CssBaseLine</a></li>
+        <li>
+          <a class="nav-link" href="#Versioned_documentation"
+            >Versioned Documentation</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Next_steps">Next steps</a></li>
+        <li><a class="nav-link" href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Installation">
+        <header>Installation</header>
+        <article>
+          <p>
+            Install Material-UI, the world's most popular React UI framework.
+            Material-UI is available as an
+            <a
+              href="https://www.npmjs.com/package/@material-ui/core"
+              target="_blank"
+              >npm package</a
+            >.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="npm">
+        <header>npm</header>
+        <article>
+          <p>To install and save in your package.json dependencies, run:</p>
+          <code>
+            <div class="code_comment">
+              // with npm npm install @material-ui/core
+            </div>
+
+            <div class="code_comment">// with yarn yarn add</div>
+
+            @material-ui/core
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Roboto_font">
+        <header>Roboto Font</header>
+        <article>
+          <p>
+            Material-UI was designed with the
+            <a href="https://fonts.google.com/specimen/Roboto" target="_blank"
+              >Roboto</a
+            >
+            font in mind. So be sure to follow
+            <a
+              href="https://material-ui.com/components/typography/#general"
+              target="_blank"
+              >these instructions</a
+            >. For instance, via Google Web Fonts:
+          </p>
+          <code>
+            &lt;link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            /&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Font_icons">
+        <header>Font Icons</header>
+        <article>
+          <p>
+            In order to use the font <mark>Icon</mark> code component, you must
+            first add the Material icons font. Here are some instructions on how
+            to do so. For instance, via Google Web Fonts:
+          </p>
+          <code>
+            &lt;link rel="stylesheet"
+            href="https://fonts.googleapis.com/icon?family=Material+Icons" /&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="SVG_icons">
+        <header>SVG Icons</header>
+        <article>
+          <p>
+            In order to use prebuilt SVG Material icons, such as those found in
+            the
+            <a href="https://material-ui.com/components/icons/" target="_blank"
+              >icons demos</a
+            >
+            you must first install the
+            <a
+              href="https://www.npmjs.com/package/@material-ui/icons"
+              target="_blank"
+              >@material-ui/icons</a
+            >
+            package:
+          </p>
+          <code>
+            <div class="code_comment">// with npm npm install</div>
+            @material-ui/icons
+            <div class="code_comment">// with yarn</div>
+            yarn add @material-ui/icons
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Usage">
+        <header>Usage</header>
+        <article>
+          <p>
+            Material-UI components work in isolation.
+            <b>They are self-supporting</b>, and will only inject the styles
+            they need to display. They don't rely on any global style-sheets
+            such as
+            <a href="https://github.com/necolas/normalize.css/" target="_blank"
+              >normalize.css</a
+            >.
+          </p>
+          <p>
+            You can use any of the components as demonstrated in the
+            documentation. Please refer to each component's
+            <a
+              href="https://material-ui.com/components/buttons/"
+              target="_blank"
+              >demo page to see how</a
+            >
+            they should be imported.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Quick_start">
+        <header>Quick start</header>
+        <article>
+          <p>
+            Here's a quick example to get you started,
+            <b>it's literally all you need</b>:
+          </p>
+
+          <code class="javascript">
+            import React from 'react'; <br />
+            import ReactDOM from 'react-dom';<br />
+            import Button from '@material-ui/core/Button';<br /><br />
+
+            function App() {<br />
+            return (<br />
+            &lt;button variant="contained" color="primary"&gt;
+            <br />
+            Hello World<br />&lt;/button &gt;<br />
+            );<br />
+            }<br /><br />
+
+            ReactDOM.render(<App />, document.querySelector('#app'));
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Globals">
+        <header>Globals</header>
+        <article>
+          <p>
+            Material-UI usage experience can be improved with a handful of
+            important globals that you’ll need to be aware of.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Responsive_meta_tag">
+        <header>Responsive meta tag</header>
+        <article>
+          <p>
+            Material-UI is developed mobile-first, a strategy in which we first
+            write code for mobile devices, and then scale up components as
+            necessary using CSS media queries. To ensure proper rendering and
+            touch zooming for all devices, add the responsive viewport meta tag
+            to your <mark>&lt;head&gt;</mark> element.
+          </p>
+
+          <code>
+            &lt;meta <br />
+            name="viewport" <br />
+            content="minimum-scale=1, initial-scale=1, width=device-width"<br />
+            /&gt;
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="CssBaseline">
+        <header>CssBaseline</header>
+        <article>
+          <p>
+            Material-UI provides an optional
+            <a
+              href="https://material-ui.com/components/css-baseline/"
+              target="_blank"
+              >CssBaseline</a
+            >
+            component. It fixes some inconsistencies across browsers and devices
+            while providing slightly more opinionated resets to common HTML
+            elements.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Versioned_documentation">
+        <header>Versioned documentation</header>
+        <article>
+          <p>
+            This documentation always reflects the latest stable version of
+            Material-UI. You can find older versions of the documentation on a
+            <a href="https://material-ui.com/versions/" target="_blank"
+              >separate page</a
+            >.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Next_steps">
+        <header>Next steps</header>
+        <article>
+          <p>
+            Now that you have an idea of the basic setup, it's time to learn
+            more about:
+          </p>
+          <ul>
+            <li>
+              How to provide
+              <a
+                href="https://material-ui.com/components/typography/"
+                target="_blank"
+                >the Material Design font and typography</a
+              >
+              .
+            </li>
+            <li>
+              How to take advantage of the
+              <a
+                href="https://material-ui.com/customization/theming/"
+                target="_blank"
+                >theming solution</a
+              >.
+            </li>
+            <li>
+              How to
+              <a
+                href="https://material-ui.com/customization/components/"
+                target="_blank"
+                >override</a
+              >
+              the look and feel of the components.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <p>All the documentation in this page is taken from:</p>
+          <ul>
+            <li>
+              <a
+                href="https://material-ui.com/getting-started/installation/"
+                target="_blank"
+                >Material-UI installation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://material-ui.com/getting-started/usage/"
+                target="_blank"
+                >Material-UI usage</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
